@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>sabIA</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- NAVBAR -->
+<nav>
+  <ul>
+    <li><a href="#que-es">¿Qué es?</a></li>
+    <li><a href="#para-que">¿Para qué?</a></li>
+    <li><a href="#por-que">¿Por qué?</a></li>
+    <li><a href="#como">¿Cómo?</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1>sabIA</h1>
+  <p>Uso consciente de la inteligencia artificial</p>
+</header>
+
+<!-- SECCIÓN ¿QUÉ ES? -->
+<section class="section" id="que-es">
+  <!-- Icono IA -->
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm-1-13h2v6h-2Zm0 8h2v2h-2Z" />
+    </svg>
+  </div>
+  <h2>¿Qué es?</h2>
+  <p>La <strong>inteligencia artificial (IA)</strong> es la capacidad de una máquina para realizar tareas que normalmente requieren inteligencia humana. Un ejemplo popular de IA generativa es <strong>ChatGPT</strong>, desarrollado por OpenAI.</p>
+  <p>ChatGPT utiliza <strong>aprendizaje automático</strong> para generar contenido según el texto que el usuario introduce (<em>prompt</em>).</p>
+</section>
+
+<!-- SECCIÓN ¿PARA QUÉ? -->
+<section class="section" id="para-que">
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
+      <path d="M4 2h16a2 2 0 0 1 2 2v8h-2V4H4v16h8v2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm17 14v-2h-2v2h2Zm-2 2v2h2v-2h-2Zm-2 0h-2v2h2v-2Zm0-4v-2h-2v2h2Zm-2 0h-2v2h2v-2Z" />
+    </svg>
+  </div>
+  <h2>¿Para qué?</h2>
+  <p>La IA se usa para generar <strong>textos, imágenes, software</strong> y más. Puede:</p>
+  <ul>
+    <li>Agilizar procesos de redacción</li>
+    <li>Apoyar el desarrollo de ideas</li>
+    <li>Ahorrar tiempo</li>
+  </ul>
+</section>
+
+<!-- SECCIÓN ¿POR QUÉ? -->
+<section class="section" id="por-que">
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm-.5-13h1V9h-1Zm0 4h1v5h-1Z" />
+    </svg>
+  </div>
+  <h2>¿Por qué reflexionar sobre su uso?</h2>
+  <ul>
+    <li>Generar 100 palabras puede usar hasta <strong>519 ml de agua</strong>.</li>
+    <li>La producción masiva sin necesidad aumenta el impacto ambiental.</li>
+    <li>La <strong>ONU</strong> recomienda regulaciones sostenibles.</li>
+  </ul>
+</section>
+
+<section class="section" id="como">
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm4.95 6.05-6.364 6.364-2.121-2.122-1.415 1.415 3.536 3.536 7.778-7.778Z" />
+    </svg>
+  </div>
+  <h2>¿Cómo usarla responsablemente?</h2>
+  <ul>
+    <li>Evita generar contenido sin propósito.</li>
+    <li>Usa la IA como asistente, no como reemplazo.</li>
+    <li>Prefiere herramientas sostenibles.</li>
+    <li>Infórmate y comparte el conocimiento.</li>
+  </ul>
+</section>
+
+<section class="section" id="cuestionario">
+  <div class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8ZM11 10h2v5h-2Zm0-4h2v2h-2Z"/>
+    </svg>
+  </div>
+  <h2>Reflexiona:</h2>
+  <p><strong>¿Crees que estás utilizando la inteligencia artificial de manera responsable?</strong></p>
+  <div class="quiz-buttons">
+    <button onclick="responder('bien')">Sí, con conciencia 🌱</button>
+    <button onclick="responder('mejorar')">Podría mejorar 🤔</button>
+    <button onclick="responder('no')">No, pero quiero aprender 💡</button>
+  </div>
+  <p id="respuesta" class="respuesta"></p>
+</section>
+
+<button id="topBtn" title="Ir arriba">↑</button>
+
+<!-- FOOTER -->
+<footer>
+  <p>Una iniciativa educativa para la ciudadanía digital responsable.</p>
+  <p><strong>quinqué labs ⋆</strong> &copy; 2025</p>
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
