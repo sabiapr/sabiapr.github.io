@@ -13,11 +13,16 @@ if ('IntersectionObserver' in window) {
   sections.forEach(section => observer.observe(section));
 }
 
-// Mostrar botón "Ir arriba" al hacer scroll
+// Botón "Ir arriba"
 const topBtn = document.getElementById("topBtn");
+
 if (topBtn) {
   window.onscroll = function () {
-    topBtn.style.display = (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) ? "block" : "none";
+    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
   };
 
   topBtn.onclick = function () {
