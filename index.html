@@ -15,8 +15,6 @@
     <li><a href="#para-que">¿Para qué?</a></li>
     <li><a href="#por-que">¿Por qué?</a></li>
     <li><a href="#como">¿Cómo?</a></li>
-    <li><a href="#impacto">Impacto</a></li>
-    <li><a href="#cuestionario">Reflexión</a></li>
   </ul>
 </nav>
 
@@ -54,19 +52,34 @@
   </ul>
 </section>
 
-<!-- SECCIÓN ¿POR QUÉ? -->
-<section class="section" id="por-que">
+<!-- SECCIÓN IMPACTO -->
+<section class="section" id="impacto">
   <div class="icon">
     <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
-      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm-.5-13h1V9h-1Zm0 4h1v5h-1Z"/>
+      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm-1-13h2v6h-2Zm0 8h2v2h-2Z"/>
     </svg>
   </div>
-  <h2>¿Por qué reflexionar sobre su uso?</h2>
+  <h2>Impacto ambiental de la IA</h2>
+  <p>El uso de modelos de inteligencia artificial como ChatGPT conlleva un consumo significativo de recursos naturales:</p>
   <ul>
-    <li>Generar 100 palabras puede usar hasta <strong>519 ml de agua</strong>.</li>
-    <li>La producción masiva sin necesidad aumenta el impacto ambiental.</li>
-    <li>La <strong>ONU</strong> recomienda regulaciones sostenibles.</li>
+    <li>Generar un correo electrónico de 100 palabras puede consumir entre <strong>235 ml y 1,408 ml de agua</strong>, dependiendo del centro de datos. Fuente: <a href="https://es.wired.com/articulos/la-cantidad-de-agua-y-electricidad-que-usa-chatgpt-esta-fuera-de-control" target="_blank">WIRED</a>.</li>
+    <li>El entrenamiento de modelos avanzados ha requerido hasta <strong>700,000 litros de agua</strong>, equivalente a cientos de vehículos eléctricos.</li>
+    <li>El consumo energético está alcanzando niveles comparables al consumo eléctrico anual de países enteros.</li>
   </ul>
+  <p>Es crucial utilizar estas tecnologías de manera consciente para mitigar su impacto ambiental.</p>
+</section>
+
+  <!-- AGUA -->
+  <section class="section" id="visualizacion">
+  <h2>Consumo de agua por uso de IA</h2>
+  <div class="glass-container">
+    <div class="glass">
+      <div class="water" id="water"></div>
+    </div>
+    <p>Este vaso representa el consumo de agua al generar contenido con IA.</p>
+    <input type="range" id="usageRange" min="0" max="100" value="0" />
+    <label for="usageRange">Cantidad de palabras generadas: <span id="wordCount">0</span></label>
+  </div>
 </section>
 
 <!-- SECCIÓN ¿CÓMO? -->
@@ -83,36 +96,6 @@
     <li>Prefiere herramientas sostenibles.</li>
     <li>Infórmate y comparte el conocimiento.</li>
   </ul>
-</section>
-
-  <!-- AGUA -->
-  <section class="section" id="visualizacion">
-  <h2>Consumo de agua por uso de IA</h2>
-  <div class="glass-container">
-    <div class="glass">
-      <div class="water" id="water"></div>
-    </div>
-    <p>Este vaso representa el consumo de agua al generar contenido con IA.</p>
-    <input type="range" id="usageRange" min="0" max="100" value="0" />
-    <label for="usageRange">Cantidad de palabras generadas: <span id="wordCount">0</span></label>
-  </div>
-</section>
-
-<!-- SECCIÓN IMPACTO -->
-<section class="section" id="impacto">
-  <div class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#1D1D1D" viewBox="0 0 24 24">
-      <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Zm-1-13h2v6h-2Zm0 8h2v2h-2Z"/>
-    </svg>
-  </div>
-  <h2>Impacto ambiental de la IA</h2>
-  <p>El uso de modelos de inteligencia artificial como ChatGPT conlleva un consumo significativo de recursos naturales:</p>
-  <ul>
-    <li>Generar un correo electrónico de 100 palabras puede consumir entre <strong>235 ml y 1,408 ml de agua</strong>, dependiendo del centro de datos. Fuente: <a href="https://es.wired.com/articulos/la-cantidad-de-agua-y-electricidad-que-usa-chatgpt-esta-fuera-de-control" target="_blank">WIRED</a>.</li>
-    <li>El entrenamiento de modelos avanzados ha requerido hasta <strong>700,000 litros de agua</strong>, equivalente a cientos de vehículos eléctricos.</li>
-    <li>El consumo energético está alcanzando niveles comparables al consumo eléctrico anual de países enteros.</li>
-  </ul>
-  <p>Es crucial utilizar estas tecnologías de manera consciente para mitigar su impacto ambiental.</p>
 </section>
 
 <!-- SECCIÓN CUESTIONARIO -->
