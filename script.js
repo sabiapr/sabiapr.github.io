@@ -43,3 +43,17 @@ function responder(valor) {
     respuesta.textContent = mensaje[valor];
   }
 }
+
+
+// Agua 
+const usageRange = document.getElementById('usageRange');
+  const water = document.getElementById('water');
+  const wordCount = document.getElementById('wordCount');
+
+  usageRange.addEventListener('input', () => {
+    const words = usageRange.value;
+    wordCount.textContent = words;
+    // Asumiendo que 100 palabras consumen hasta 1,408 ml, escalamos la altura del agua en consecuencia
+    const heightPercentage = (words / 100) * 100; // Escala lineal
+    water.style.height = `${heightPercentage}%`;
+  });
